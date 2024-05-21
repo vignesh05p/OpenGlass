@@ -9,6 +9,8 @@ import { textToSpeech } from '../modules/openai';
 function usePhotos(device: BluetoothRemoteGATTServer) {
 
     // Subscribe to device
+
+    
     const [photos, setPhotos] = React.useState<Uint8Array[]>([]);
     const [subscribed, setSubscribed] = React.useState<boolean>(false);
     React.useEffect(() => {
